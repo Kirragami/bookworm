@@ -7,16 +7,19 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
-
+import { LoadingComponent } from './components/loading/loading.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @NgModule({
   declarations: [
     BookCardComponent,
     NavbarComponent,
+    LoadingComponent,
   ],
   exports: [
     BookCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +27,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule
   ]
 })
 export class SharedModule { }

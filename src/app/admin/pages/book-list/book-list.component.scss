@@ -1,0 +1,55 @@
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .book-card {
+    max-width: 300px;
+  }
+
+  .book-card {
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center;
+    height: 100%;
+    width: 200px;
+    border: solid 1px black;
+    padding: 1px;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book-cover {
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    max-width: 200px;
+    gap: 30px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    
+  }
+  
+  .text-muted {
+    font-size: 0.8rem;
+  }
+  
+  .btn-sm {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+  

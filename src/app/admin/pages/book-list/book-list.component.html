@@ -1,1 +1,13 @@
-<p>book-list works!</p>
+<div class="book-grid">
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 book-card" *ngFor="let book of books">
+      <div class="book-card">
+        <img [src]="book.coverImage" class="card-img-top book-cover" alt="{{ book.title }}">
+        <div class="card-body p-2">
+          <h6 class="card-title text-truncate" title="{{ book.title }}">{{ book.title }}</h6>
+          <p class="text-muted text-truncate small">{{ book.author }}</p>
+          <button class="btn btn-sm btn-primary w-100">Read</button>
+          <button class="btn btn-sm btn-primary w-100" (click)="addToPlanToRead(book)">Plan to Read</button>
+        </div>
+      </div>
+    </div>
+</div>
