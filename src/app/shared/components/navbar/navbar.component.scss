@@ -1,0 +1,24 @@
+.sidenav-container {
+    height: 100vh;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    mat-sidenav {
+      width: 200px;
+    }
+  }
+  
