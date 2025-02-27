@@ -23,7 +23,7 @@ export class PlanToReadComponent implements OnInit {
   removeFromPlanToRead(index: number) {
     this.books.splice(index, 1);
     this.bookService.updatePlanToRead(this.books).subscribe((data) => {
-      this.books = data.plantoread;
+      this.books = data.userdata.plantoread;
     })
   }
 

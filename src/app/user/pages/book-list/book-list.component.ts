@@ -25,7 +25,7 @@ export class BookListComponent implements OnInit {
   addToPlanToRead(book: Book) {
     this.plantoread.push(book);
     this.bookService.updatePlanToRead(this.plantoread).subscribe((data)=> {
-      this.plantoread = data.plantoread;
+      this.plantoread = data.userdata.plantoread;
     });
   }
 }
